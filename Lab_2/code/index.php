@@ -9,6 +9,7 @@ $order .= " with barbecue sauce";
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
 
+// 2.Numbers
 // Declaring a variable with an integer value
 $integer_number = 5;
 // Выводим значение переменной на терминал
@@ -32,6 +33,7 @@ $this_month = 1089.98;
 // We display the difference between expenses last month and this month
 echo "\nDifference in expenses: " . ($last_month - $this_month);
 
+// 3.Multiplication and division
 // Creating a variable with the number of programming languages learned
 $num_languages = 4;
 
@@ -48,3 +50,8 @@ $days = $months * $days_per_month;
 $days_per_language = $days / $num_languages;
 
 echo $days_per_language;
+
+// 4.Degree
+echo 8 ** 2; // Outputs 64
+
+
