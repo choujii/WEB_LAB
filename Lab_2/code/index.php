@@ -32,4 +32,19 @@ $this_month = 1089.98;
 // We display the difference between expenses last month and this month
 echo "\nDifference in expenses: " . ($last_month - $this_month);
 
+// Creating a variable with the number of programming languages learned
+$num_languages = 4;
 
+// Creating a variable with the number of months spent on training
+$months = 11;
+
+// We assume that Meg was coding 16 days a month
+$days_per_month = 16;
+
+// Counting the total number of days spent on training
+$days = $months * $days_per_month;
+
+// Counting the number of days spent learning each language on average
+$days_per_language = $days / $num_languages;
+
+echo $days_per_language;
