@@ -54,4 +54,27 @@ echo $days_per_language;
 // 4.Degree
 echo 8 ** 2; // Outputs 64
 
+// 5.Assignment operators
 
+// // Create the $my_name variable and assign any number to it
+$my_num = 10;
+
+// Creating the $answer variable and assigning it the value $my_number
+$answer = $my_num;
+
+// Use the addition assignment operator to add 2 to $answer
+$answer += 2;
+
+// We use the multiplication assignment operator to multiply $answer by 2
+$answer *= 2;
+
+// Using the assignment operator subtraction to subtract 2 from $answer
+$answer -= 2;
+
+// Use the division assignment operator to divide $answer by 2
+$answer /= 2;
+
+// We use the assignment subtraction operator to subtract the original number ($my_num) from $answer
+$answer -= $my_num;
+
+echo $answer;
