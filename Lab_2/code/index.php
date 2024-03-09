@@ -78,3 +78,107 @@ $answer /= 2;
 $answer -= $my_num;
 
 echo $answer;
+
+// 6.Mathematical functions
+
+//Find the remainder of dividing the variable $a by the variable $b:
+$a = 10;
+$b = 3;
+$remainder = $a % $b;
+echo "The remainder of dividing $a by $b: $remainder";
+
+//Checking the division of $a by $b without remainder
+$a = 10;
+$b = 3;
+if ($a % $b == 0) {
+    $result = $a / $b;
+    echo "Divided, the result of division: $result";
+} else {
+    $remainder = $a % $b;
+    echo "Divided with the remainder, the remainder of the division: $remainder";
+}
+
+// Raise the number 2 to the 10th power and find the square root of 245
+$st = pow(2, 10);
+$square_root_of_245 = sqrt(245);
+echo "2 to the 10th power: $st, square root of 245: $square_root_of_245";
+
+// Create an array and find the square root of the sum of the squares of its elements
+$array = [4, 2, 5, 19, 13, 0, 10];
+$sum_of_squares = 0;
+foreach ($array as $value) {
+    $sum_of_squares += $value ** 2;
+}
+$square_root_of_sum_of_squares = sqrt($sum_of_squares);
+echo "The root of the sum of squares of the array elements: $square_root_of_sum_of_squares";
+
+// Round the square root of 379 to whole, tenths, and hundredths
+$square_root_of_379 = sqrt(379);
+$rounded_integer = round($square_root_of_379);
+$rounded_tenths = round($square_root_of_379, 1);
+$rounded_hundredths = round($square_root_of_379, 2);
+echo "Root of 379: $square_root_of_379, rounded root: $rounded_integer, up to ten: $rounded_tenths, up to a hundred: $rounded_hundredths";
+
+// Finding the minimum and maximum numbers in this array
+$array = [4, -2, 5, 19, -130, 0, 10];
+$min = min($array);
+$max = max($array);
+echo "Minimum number: $min, maximum number: $max";
+
+// Output a random number from 1 to 100
+$random_number = rand(1, 100);
+echo "Random number from 1 to 100: $random_number";
+
+// Create an array of 10 random numbers
+
+$random_numbers = [];
+for ($i = 0; $i < 10; $i++) {
+    $random_numbers[] = rand();
+}
+print_r($random_numbers);
+
+// Find the modulus of the difference between the variables $a and $b
+$a = 10;
+$b = 7;
+$absolute_difference = abs($a - $b);
+echo "Modulus of difference between $a and $b: $absolute_difference";
+
+// Convert the negative numbers of the array to positive ones
+$array = [1, 2, -1, -2, 3, -3];
+foreach ($array as &$value) {
+    $value = abs($value);
+}
+unset($value); // disable the link to the last element
+print_r($array);
+
+// Find all the divisors of the number 30
+$number = 30;
+$divisors = [];
+for ($i = 1; $i <= $number; $i++) {
+    if ($number % $i == 0) {
+        $divisors[] = $i;
+    }
+}
+print_r($divisors);
+
+// Find out how many of the first elements of the array need to be added so that the sum is more than 10
+$array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$sum = 0;
+$elements_to_sum = 0;
+foreach ($array as $value) {
+    $sum += $value;
+    $elements_to_sum++;
+    if ($sum > 10) {
+        break;
+    }
+}
+echo "We need to add up the first $elements_to_sum of the array elements so that the sum is greater than 10";
+
+
+
+
+
+
+
+
+
