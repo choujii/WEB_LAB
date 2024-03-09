@@ -244,6 +244,82 @@ function sumDigitsToOne($number)
 $number = 987654321;
 echo "Сумма цифр числа $number: " . sumDigitsToOne($number) . "\n";
 
+// 9.Arrays
+
+// Filling the array
+$array = [];
+for ($i = 1; $i <= 5; $i++) {
+    $array[] = str_repeat('x', $i);
+}
+print_r($array);
+
+//arrayFill function:
+function arrayFill($value, $count) {
+    $result = [];
+    for ($i = 0; $i < $count; $i++) {
+        $result[] = $value;
+    }
+    return $result;
+}
+
+// Example of using the function
+$array = arrayFill('x', 5);
+print_r($array);
+
+// Finding the sum of the elements of a two-dimensional array
+$array = [[1, 2, 3], [4, 5], [6]];
+
+$sum = 0;
+foreach ($array as $subarray) {
+    $sum += array_sum($subarray);
+}
+echo "Sum of array elements: $sum\n";
+
+// Creating an array [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+$array = [];
+$count = 1;
+for ($i = 0; $i < 3; $i++) {
+    $subarray = [];
+    for ($j = 0; $j < 3; $j++) {
+        $subarray[] = $count++;
+    }
+    $array[] = $subarray;
+}
+print_r($array);
+
+// Multiplication and addition of array elements
+$array = [2, 5, 3, 9];
+$result = ($array[0] * $array[1]) + ($array[2] * $array[3]);
+echo "Result: $result\n";
+
+// Output of last name, first name and patronymic
+$user = [
+    'name' => 'Lvov',
+    'surname' => 'Maksim',
+    'patronymic' => 'Olegovich'
+];
+echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'] . "\n";
+
+//Creating an array with the current date
+$date = [
+    'year' => date('Y'),
+    'month' => date('m'),
+    'day' => date('d')
+];
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day'] . "\n";
+
+//Output the number of elements, the last and penultimate elements of the array
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo "The number of elements in the array: " . count($arr) . "\n";
+echo "The last element: " . end($arr) . "\n";
+echo "The penultimate element: " . prev($arr) . "\n";
+
+
+
+
+
+
+
 
 
 
