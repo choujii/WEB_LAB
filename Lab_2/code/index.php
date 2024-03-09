@@ -185,6 +185,68 @@ function printStringReturnNumber() {
 $my_num = printStringReturnNumber();
 echo $my_num;
 
+// 8.Functions
+
+// The increaseEnthusiasm() function, which adds an exclamation mark to the passed string
+function increaseEnthusiasm($string)
+{
+    return $string . "!";
+}
+
+// Function repeat Three Times() function that repeats the passed string three times
+function repeatThreeTimes($string)
+{
+    return $string . $string . $string;
+}
+
+// The cut function, which cuts the string to the specified length
+function cut($string, $length = 10)
+{
+    return substr($string, 0, $length);
+}
+
+// Output of the result of calling the increase Enthusiasm function() with the string "Hello"
+echo increaseEnthusiasm("Hello") . "\n";
+
+// Output of the result of calling the repeatThreeTimes() function with the string "Goodbye"
+echo repeatThreeTimes("Goodbye") . "\n";
+
+// Output the result of calling the increaseEnthusiasm() function with the result of calling repeatThreeTimes() as an argument
+echo increaseEnthusiasm(repeatThreeTimes("Thank you")) . "\n";
+
+// Function for output of array elements using recursion
+function printArrayRecursively($array, $index = 0)
+{
+    if ($index < count($array)) {
+        echo $array[$index] . " ";
+        printArrayRecursively($array, $index + 1);
+    }
+}
+
+// Example of calling the printArray Recursively() function with an array of numbers
+$array = [1, 2, 3, 4, 5];
+echo "Элементы массива: ";
+printArrayRecursively($array);
+echo "\n";
+
+// Function for adding digits of a number to get a single digit number
+function sumDigitsToOne($number)
+{
+    $sum = array_sum(str_split((string)$number));
+    if ($sum > 9) {
+        return sumDigitsToOne($sum);
+    } else {
+        return $sum;
+    }
+}
+
+// Example of calling the sumDigitsToOne() function with a number
+$number = 987654321;
+echo "Сумма цифр числа $number: " . sumDigitsToOne($number) . "\n";
+
+
+
+
 
 
 
