@@ -174,6 +174,17 @@ foreach ($array as $value) {
 }
 echo "We need to add up the first $elements_to_sum of the array elements so that the sum is greater than 10";
 
+// 7.Functions
+
+function printStringReturnNumber() {
+    echo "This is a string.";
+    return 52; // Any numeric value
+}
+
+// Calling the function and writing the return value to a variable
+$my_num = printStringReturnNumber();
+echo $my_num;
+
 
 
 
