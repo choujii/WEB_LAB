@@ -6,8 +6,6 @@ $very_bad_unclear_name = "15 chicken wings";
 $order = &$very_bad_unclear_name;
 $order .= " with barbecue sauce";
 
-// Don't change the line below
-echo "\nYour order is: $very_bad_unclear_name.";
 
 // 2.Numbers
 // Declaring a variable with an integer value
@@ -361,7 +359,7 @@ if (count($arr) == 3) {
     echo array_sum($arr);
 }
 
-// 11. Cycles
+// 11.Cycles
 // External loop for strings
 for ($i = 1; $i <= 20; $i++) {
     // Variable for storing the current line
@@ -375,6 +373,37 @@ for ($i = 1; $i <= 20; $i++) {
     // Output of the current line
     echo $row . "<br>";
 }
+// 12.Combination of functions
+// The arithmetic mean of the array elements:
+$array = [1, 2, 3, 4, 5];
+$average = array_sum($array) / count($array);
+echo $average; // Output 3
+
+// The sum of the numbers from 1 to 100 without cycles
+$sum = array_sum(range(1, 100));
+echo $sum; // Output 5050
+
+// Get an array with square roots of numbers
+$array = [4, 9, 16, 25];
+$squareRoots = array_map('sqrt', $array);
+print_r($squareRoots); // Output Array ( [0] => 2 [1] => 3 [2] => 4 [3] => 5 )
+
+// using the letters of the English alphabet as keys
+$letters = range('a', 'z');
+$numbers = range(1, 26);
+$array = array_combine($letters, $numbers);
+print_r($array);
+
+// the sum of the pairs of numbers in the string '1234567890'
+$string = '1234567890';
+$sum = array_sum(str_split($string, 2));
+echo $sum; // Output 255
+
+
+// Don't change the line below
+echo "\nYour order is: $very_bad_unclear_name.";
+
+
 
 
 
