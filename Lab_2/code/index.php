@@ -314,6 +314,61 @@ echo "The number of elements in the array: " . count($arr) . "\n";
 echo "The last element: " . end($arr) . "\n";
 echo "The penultimate element: " . prev($arr) . "\n";
 
+// 10. if else construction
+//  function for checking the sum of two numbers
+function checkSum($num1, $num2) {
+    return ($num1 + $num2) > 10;
+}
+// Usage example
+$num1 = 5;
+$num2 = 7;
+$result = checkSum($num1, $num2);
+echo $result ? "true" : "false"; // Outputs true
+// Function for checking the equality of two numbers
+function checkEquality($num1, $num2) {
+    return $num1 === $num2;
+}
+// Usage example
+$num1 = 5;
+$num2 = 5;
+$result = checkEquality($num1, $num2);
+echo $result ? "true" : "false"; // Outputs true
+
+// Rewritten code
+$test = 0;
+echo "\n";
+echo ($test == 0) ? 'right' : '';
+echo "\n";
+
+// Checking the number and summing the digits
+$age = 52; // Example of a number
+
+if ($age < 10 || $age > 99) {
+    echo "A number less than 10 or more than 99";
+} else {
+    $sum = array_sum(str_split($age));
+    if ($sum <= 9) {
+        echo "The sum of the digits is unambiguous";
+    } else {
+        echo "The sum of two-digit digits";
+    }
+}
+
+// Checking the array and displaying the sum of the elements
+$arr = [1, 2, 3]; // Example of array
+
+if (count($arr) == 3) {
+    echo array_sum($arr);
+}
+
+
+
+
+
+
+
+
+
 
 
 
