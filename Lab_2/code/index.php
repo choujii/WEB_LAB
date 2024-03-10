@@ -361,6 +361,22 @@ if (count($arr) == 3) {
     echo array_sum($arr);
 }
 
+// 11. Cycles
+// External loop for strings
+for ($i = 1; $i <= 20; $i++) {
+    // Variable for storing the current line
+    $row = '';
+
+    // Internal loop for adding 'x' to a string
+    for ($j = 1; $j <= $i; $j++) {
+        $row .= 'x';
+    }
+
+    // Output of the current line
+    echo $row . "<br>";
+}
+
+
 
 
 
