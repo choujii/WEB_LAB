@@ -1,5 +1,5 @@
 <?php
-/* Imagine a lot of code here */
+// Imagine a lot of code here
 $very_bad_unclear_name = "15 chicken wings";
 
 // Write your code here:
@@ -10,7 +10,7 @@ $order .= " with barbecue sauce";
 // 2.Numbers
 // Declaring a variable with an integer value
 $integer_number = 5;
-// Выводим значение переменной на терминал
+// Outputting the value of the variable to the terminal
 echo $integer_number;
 
 // Printing a new line
@@ -18,17 +18,17 @@ echo "\n";
 
 // Declaring a floating-point variable
 $float_number = 3.14;
-// Output the value of the new variable to the terminal
+// Outputting the value of the new variable to the terminal
 echo $float_number;
 
-// We print the number 12
+// Outputting the number 12
 echo 6 + 6;
 
 // How much more did I spend last month than this month?
 $last_month = 1187.23;
 $this_month = 1089.98;
 
-// We display the difference between expenses last month and this month
+// Outputting the difference between expenses last month and this month
 echo "\nDifference in expenses: " . ($last_month - $this_month);
 
 // 3.Multiplication and division
@@ -38,7 +38,7 @@ $num_languages = 4;
 // Creating a variable with the number of months spent on training
 $months = 11;
 
-// We assume that Meg was coding 16 days a month
+// Assuming that Meg was coding 16 days a month
 $days_per_month = 16;
 
 // Counting the total number of days spent on training
@@ -49,7 +49,7 @@ $days_per_language = $days / $num_languages;
 
 echo $days_per_language;
 
-// 4.Degree
+// 4.Exponentiation
 echo 8 ** 2; // Outputs 64
 
 // 5.Assignment operators
@@ -58,37 +58,37 @@ echo 8 ** 2; // Outputs 64
 $my_num = 10;
 
 // Creating the $answer variable and assigning it the value $my_number
-$answer = $my_num;
+$answer = &$my_num;
 
-// Use the addition assignment operator to add 2 to $answer
+// Using the addition assignment operator to add 2 to $answer
 $answer += 2;
 
-// We use the multiplication assignment operator to multiply $answer by 2
+// Using the multiplication assignment operator to multiply $answer by 2
 $answer *= 2;
 
-// Using the assignment operator subtraction to subtract 2 from $answer
+// Using the subtraction assignment operator to subtract 2 from $answer
 $answer -= 2;
 
-// Use the division assignment operator to divide $answer by 2
+// Using the division assignment operator to divide $answer by 2
 $answer /= 2;
 
-// We use the assignment subtraction operator to subtract the original number ($my_num) from $answer
+// Using the subtraction assignment operator to subtract the original number ($my_num) from $answer
 $answer -= $my_num;
 
 echo $answer;
 
 // 6.Mathematical functions
 
-//Find the remainder of dividing the variable $a by the variable $b:
+// Find the remainder of dividing the variable $a by the variable $b:
 $a = 10;
 $b = 3;
 $remainder = $a % $b;
 echo "The remainder of dividing $a by $b: $remainder";
 
-//Checking the division of $a by $b without remainder
+// Checking the division of $a by $b without remainder
 $a = 10;
 $b = 3;
-if ($a % $b == 0) {
+if (0 === $a % $b) {
     $result = $a / $b;
     echo "Divided, the result of division: $result";
 } else {
@@ -153,7 +153,7 @@ print_r($array);
 $number = 30;
 $divisors = [];
 for ($i = 1; $i <= $number; $i++) {
-    if ($number % $i == 0) {
+    if ($number % $i === 0) {
         $divisors[] = $i;
     }
 }
@@ -223,7 +223,7 @@ function printArrayRecursively($array, $index = 0)
 
 // Example of calling the printArray Recursively() function with an array of numbers
 $array = [1, 2, 3, 4, 5];
-echo "Элементы массива: ";
+echo "Array elements: ";
 printArrayRecursively($array);
 echo "\n";
 
@@ -240,7 +240,7 @@ function sumDigitsToOne($number)
 
 // Example of calling the sumDigitsToOne() function with a number
 $number = 987654321;
-echo "Сумма цифр числа $number: " . sumDigitsToOne($number) . "\n";
+echo "Sum of digits of $number: " . sumDigitsToOne($number) . "\n";
 
 // 9.Arrays
 
@@ -313,7 +313,7 @@ echo "The last element: " . end($arr) . "\n";
 echo "The penultimate element: " . prev($arr) . "\n";
 
 // 10. if else construction
-//  function for checking the sum of two numbers
+// Function for checking the sum of two numbers
 function checkSum($num1, $num2) {
     return ($num1 + $num2) > 10;
 }
@@ -335,17 +335,17 @@ echo $result ? "true" : "false"; // Outputs true
 // Rewritten code
 $test = 0;
 echo "\n";
-echo ($test == 0) ? 'right' : '';
+echo ('right' === ($test === 0)) ? 'right' : '';
 echo "\n";
 
 // Checking the number and summing the digits
 $age = 52; // Example of a number
 
-if ($age < 10 || $age > 99) {
+if (10 > $age || 99 < $age) {
     echo "A number less than 10 or more than 99";
 } else {
     $sum = array_sum(str_split($age));
-    if ($sum <= 9) {
+    if (9 >= $sum) {
         echo "The sum of the digits is unambiguous";
     } else {
         echo "The sum of two-digit digits";
@@ -355,7 +355,7 @@ if ($age < 10 || $age > 99) {
 // Checking the array and displaying the sum of the elements
 $arr = [1, 2, 3]; // Example of array
 
-if (count($arr) == 3) {
+if (3 === count($arr)) {
     echo array_sum($arr);
 }
 
@@ -402,32 +402,3 @@ echo $sum; // Output 255
 
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
