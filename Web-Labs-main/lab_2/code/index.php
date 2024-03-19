@@ -135,7 +135,6 @@ function printStringReturnNumber()
     echo "Сколько вам лет?: ";
     return 19;
 }
-
 $my_num = printStringReturnNumber();
 echo $my_num;
 echo "\n\n";
@@ -143,51 +142,46 @@ echo "\n\n";
 //task 16
 function increaseEnthusiasm(string $string)
 {
-    return $string . "!";
+    return $string."!";
 }
-
 echo increaseEnthusiasm("Привет"), "\n";
 
 function repeatThreeTimes(string $string)
 {
-    return $string . $string . $string;
+    return $string.$string.$string;
 }
-
 echo repeatThreeTimes("NO"), "\n";
 echo increaseEnthusiasm(repeatThreeTimes("Hello")), "\n";
 
 function cut(string $string, int $l = 10)
 {
-    return substr($string, 0, $l);
+    return substr($string,0, $l);
 }
-
 $cut = cut("Я Паша Рыжков");
 echo $cut, "\n";
 
 $array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function printArray($array, $i = 0)
 {
-    if ($i < sizeof($array)) {
+    if($i<sizeof($array)){
         echo $array[$i], "\n";
         printArray($array, $i + 1);
     }
 }
-
 printArray($array);
 echo "\n";
 function sumDigits($number)
 {
     $sum = 0;
-    while ($number > 0) {
+    while($number>0) {
         $sum += $number % 10;
         $number = (int)($number / 10);
     }
-    if ($sum > 9) {
+    if($sum > 9) {
         return sumDigits($sum);
     }
     return $sum;
 }
-
 $number = 13545;
 echo sumDigits($number), "\n\n";
 
