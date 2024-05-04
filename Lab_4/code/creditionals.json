@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "choujii-project",
+  "private_key_id": "cdb06da9b3bc10cc00ea17a3f2d7ca0319295ba1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCWYULF2Jx7gT4o\n5m5RGd25A/DHyB/Ckr7PJ2NjyfWUkQiI/UdLkQYsJOc2QnrHtd3i0ObRsMSWjosk\nPdPAzfKeCNX3qe4zLK0u9kbXCtkPuSyJYpyj9kJwB3K7zYkVhd7OBc5QQSzFcwNX\nzjpAb4qDam25h1rxjFhGoVv8wCFd0qjmL7xuPHfuhPYoYvUP0YGpgE8/CUmckOMW\nAKaaP7fQAr55ndnJt5ixz+Ydxm7oguYMV367HnG/LHFPEvO8KBBeC7CfnleYwuyB\nrlLP1ufJleLc1qEdCVADJ6zISw/fWf1LNCE0KrwRdL6m0h7VNFU8Ith3/my6xNR0\nyFBnjebpAgMBAAECgf8rWkPOKtAabJB04oBCv4Zy7n1da+UaZXBtn6aYa4/di3kI\nwcX3ycaH3zagaoM3nWkn1Wk8Yg3D7e8a3o+3e6gAPvDprpcAjt1RDknC8ZAvnUpK\neYUGiec4UJyJxHCOMw0m1906MY/id1akb4j2io/Mgi+tQrn/QHnvJiMRS21glHOj\nxwviDrQG8FdzjC0J+sTJvO5gUqx0Kt2tmX9ZinXCg4v62LVCRZJlo/pB3furxA2A\nacZbx5RTLwbY9jppPaAQMAplimyWpx5fIjuFHyKsTkv+PpAZpMqsiYejNlOobH/t\nU7KcGcrg+FvcCpNS/QkmDTrVEx/0qJVoDXmfTH0CgYEAxObzaCg3HcpZWztdh2D2\niOHkxsVDDY/WDrF7PeSOIfJYj4P42znfKFgBBqYd+UIrL+7OcYyzFROfoXGqJPuu\nF1Ikrm8mvJoS+9olAXBrba7Mb3RPhnTNK/A7kpUVWHRp2grJPjuV5VnnjIkHxT6K\nEooYCaDofTRP9SMzOMpiIGUCgYEAw4PB9YOBDy3yXtUf6kGlGRP8t92H/WIgpBew\nqTGFhGRlbzK3jrIOD43gviOIaEgkuvvsxsX8lCBYbbhMHF8YZ0PG4dtiXW74hVvy\nYyQ6PSfoLiNUef4ZX1raPAHO63z2zV7eMwQ7/tCn5J2Q+fsgl2LTaSTOPtXBjLYc\n9yZgSjUCgYEAp6wDmq6kQLoPXaEwBBiN2AKEzr8sWmAh6GE6kXoPjtjQkWXQhN7D\nKZfHR+ItpBS0shypsAggd9I+HTytptCrbzCEDAaa9gA+KjmZSaBx2vT/IenpzpWo\nIcJw+GH7y1dWzFZjCJu1CZmFlCccdtrKuP7feVOMpxHlBNr0w2eUKAECgYEAg5PD\nT4ANtfJ8/1c84EEHY+YwmGitIVgNkYEj8emS6nNKVFh0ccLgdZVM34k4Pr32giQS\nx/7sKZ/PAyAZkKpq2OwjB1LGUwzgkZc8e34g95FIzuwV6PeZibOx1Np+r7psue+T\naA/8dFNl+hQUQjfASkFG96a+akketZzFx4p7GNUCgYAcmetZbXLjgQv1xQxdJnNt\ni+ftf9YFcT8SXTsNzns3A1R81yNlGwrWFRwBObNzkf6xQljq4Ap13Av5yZf0MwjY\nd12vaq1nbiJ/h9PTWlWa4ITWaxHXcZs5iGZs3baAWw2yPa9pNZK5l7R0u1TSC7rD\nl7Qo8MOk0FBeJ2EgANAM6A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "choujii-service@choujii-project.iam.gserviceaccount.com",
+  "client_id": "108076927974808187922",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/choujii-service%40choujii-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
